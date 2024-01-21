@@ -1,1 +1,37 @@
 /*your custom css goes here*/ 
+@font-face {
+	font-family: IRANYekanX;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/IRANYekanX/IRANYekanX-Bold.woff') format('woff'),   
+	url('../fonts/IRANYekanX/IRANYekanX-Bold.woff2') format('woff2');	 
+}
+
+@font-face {
+	font-family: IRANYekanX;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/IRANYekanX/IRANYekanX-Regular.woff') format('woff'),   
+	url('../fonts/IRANYekanX/IRANYekanX-Regular.woff2') format('woff2');	
+}
+
+* {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    letter-spacing:0!important;
+}
+body,.tooltip {
+	font-family: IRANYekanX!important;
+}
+
+element.style {
+    padding-right: 0.75rem !important;
+}
+p{
+	line-height: 2;
+}
+.phone-number {
+    unicode-bidi: plaintext;
+    direction: rtl;
+}

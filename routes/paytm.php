@@ -24,7 +24,7 @@ Route::group(['prefix' =>'admin', 'middleware' => ['auth', 'admin']], function()
 //Toyyibpay
 Route::controller(ToyyibpayController::class)->group(function () {
     Route::get('toyyibpay-status', 'paymentstatus')->name( 'toyyibpay-status');
-    Route::post('/toyyibpay-callback', 'callback')->name( 'toyyibpay-callback');
+    Route::any('/toyyibpay-callback', 'callback')->name( 'toyyibpay-callback');
 });
 
 //Myfatoorah START
